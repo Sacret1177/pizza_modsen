@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: change type of price to double
+      author: Gleb
+      changes:
+        - modifyDataType:
+            columnName: price
+            newDataType: double
+            schemaName: pizza-shop-product
+            tableName: products
