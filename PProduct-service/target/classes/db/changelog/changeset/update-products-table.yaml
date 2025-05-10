@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: rename categoryId to category_id
+      author: Gleb
+      changes:
+        - renameColumn:
+            columnDataType: bigint
+            newColumnName: category_id
+            oldColumnName: categoryId
+            schemaName: pizza-shop-product
+            tableName: products
